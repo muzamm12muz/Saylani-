@@ -1,0 +1,1146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>
+    .navbar{
+        top: 0;
+        position: absolute;
+        width: 100%;
+        background-color: transparent;
+        color: white;
+    }
+    .navbar-brand{
+        color: white;
+        font-weight: 700;
+    }
+    .navbar-nav li a{
+        color: white;
+        font-weight: 600;
+    }
+    .navbar-nav li a:hover{
+        color: red;
+    }
+    .navbar-button button{
+        background-color: rgba(169, 169, 169, 0.5); /* Grey color with transparency */
+        
+        color: white;
+        width: 94.31px;
+height: 40px;
+top: 17.5px;
+left: 969.69px;
+gap: 0px;
+border-radius: 30px;
+border: none;
+outline: none;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.5s ;
+font-weight: 600;
+    }
+    .navbar-button button i{
+        margin-top: 2px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .navbar-button button:hover{
+        background-color: rgba(169, 169, 169, 0.5); /* Grey color with transparency */
+        width: 125px;
+        gap: 30px;
+        overflow: hidden;
+        /* justify-content: space-between; */
+    }
+    .navbar-collapse{
+      position: relative;
+    }
+    .navbar-button{
+      position: absolute;
+      right: 0;
+    }
+    @media (max-width: 720px){
+    .hero-left h1 {
+        color: #3A3A3A;
+        /* font-family: HelveticaNeueCyr; */
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -3.759999990463257px;
+        text-align: left;
+        
+    }
+  
+    .hero-left p {
+    color: #425466;
+    /* font-family: HelveticaNeueCyr; */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    /* text-align: justify; */
+}
+.buttons button {
+    width: 111.64px;
+    height: 33px;
+    font-size: 16px;
+    border-radius: 16.5px;
+    background: #0A2540;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.hero-right{
+  position: relative;
+}
+.hero-right img{
+  display: none;
+}
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+  transition: 0.8s ease all;
+  background: rgba(169,96,238,0.7);
+  /* background: #a960ee; */
+  padding: 10px 0;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.navbar-button{
+      position: relative;
+      right: 0;
+    }
+    .navbar-toggler-icon{
+      color: white;
+
+    }
+    .navbar-toggler {
+   color: white;
+}
+}
+.other{
+  margin-top: 300px;
+}
+.images-contains{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  row-gap: 2.6rem;
+}
+@media (max-width: 720px){
+  .other{
+  margin-top: 150px;
+}
+  .images-contains{
+    display: grid;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  grid-template-columns:  1fr 1fr ;
+  row-gap: 2.6rem;
+  }
+  .images-contains img{
+    width: 200px;
+  }
+}
+.united-platform{
+  margin-top: 100px;
+}
+.united-platform h4{
+  margin-bottom: 100px;
+  color: #635BFF;
+  font-family: HelveticaNeueCyr;
+font-size: 18px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+}
+.united-platform h2{
+  color: #0A2540;
+  font-family: HelveticaNeueCyr;
+font-size: 38px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+}
+.united-platform .para{
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+  gap: 2rem;
+
+}
+.united-platform .para span{
+  color: #635BFF;
+}
+.united-platform button{
+  background: #635BFF;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-weight: 600 ;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  /* justify-content: center ; */
+
+}
+.designed{
+  margin-top: 50px;
+  background-color: #0A2540;
+  color: white;
+  padding: 200px 20px 20px 20px;
+}
+.designed-contains{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.design-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.design-left-top h2{
+  color: #00D4FF;
+  font-family: HelveticaNeueCyr;
+font-size: 18px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+}
+.design-left-top h4{
+  color: #FFFFFF;
+  font-family: HelveticaNeueCyr;
+font-size: 38px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+
+}
+.design-left-top p{
+  color: #ADBDCC;
+  font-family: HelveticaNeueCyr;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.design-left-top button{
+  color: #0A2540;
+  background: #00D4FF;
+  width: 144.14px;
+height: 33px;
+top: 280px;
+left: 16px;
+gap: 0px;
+border-radius: 16.5px;
+opacity: 0px;
+border: none;
+outline: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.design-left-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* border-left: 1px solid #00D4FF; */
+  /* padding: 10px; */
+  /* border: 1px solid red; */
+  width: 550px;
+
+}
+.design-left-bottom h5{
+  border-left: 1px solid #00D4FF;
+  /* padding: 10px; */
+  /* margin-left: 10px; */
+  padding-left: 10px;
+  
+}
+.design-left-bottom p{
+  padding: 10px;
+  color: #ADBDCC;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.design-left-bottom a{
+  padding: 10px;
+  text-decoration: none;
+  color: #00D4FF;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.design-left-top p br{
+  display: block;
+}
+
+@media (max-width: 720px){
+  .united-platform h2 {
+    color: #0A2540;
+    font-family: HelveticaNeueCyr;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+}
+.united-platform .para {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    gap: 1.5rem;
+}
+.design-left-top h4 {
+    color: #FFFFFF;
+    font-family: HelveticaNeueCyr;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+}
+.design-left-top p {
+    color: #ADBDCC;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+.design-left-top p br{
+  display: none;
+}
+.design-left-top button {
+    color: #0A2540;
+    font-size: 14px;
+    background: #00D4FF;
+    width: 144.14px;
+    height: 33px;
+    top: 280px;
+    left: 16px;
+    gap: 0px;
+    border-radius: 16.5px;
+    opacity: 0px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.design-left-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 20px;
+    /* border-left: 1px solid #00D4FF; */
+    /* padding: 10px; */
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.designed-contains{
+  display: flex;
+  flex-direction: column;
+}
+}
+.why-stripe{
+  padding: 200px 20px 70px 20px ;
+  /* height: 0vh; */
+}
+.why-contains{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+.why-top h4{
+  color: #635BFF;
+  font-family: HelveticaNeueCyr;
+font-size: 18px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.why-top h2{
+  color: #0A2540;
+  font-family: HelveticaNeueCyr;
+font-size: 38px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+
+}
+.why-bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+
+}
+.why-bottom h5{
+  border-left: 1px solid #635BFF;
+  padding-left: 10px;
+  color: #0A2540;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 550;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.why-bottom p{
+  color: #425466;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+text-align: justify;
+
+}
+@media (max-width: 720px){
+  .why-top h4 {
+    color: #635BFF;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+.why-top h2 {
+    color: #0A2540;
+    font-family: HelveticaNeueCyr;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+}
+.why-top h2 br{
+  display: none;
+}
+.why-contains{
+  gap: 50px;
+}
+.why-bottom {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.hero-left p br{
+  display: none;
+}
+}
+.global{
+  margin-top: 50px;
+  background: #0A2540;
+  color: white;
+  padding: 200px 20px 50px 20px;
+}
+.global-contains h4{
+  color: #00D4FF;
+  font-family: HelveticaNeueCyr;
+font-size: 18px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.global-contains h2{
+  color: #FFFFFF;
+  font-family: HelveticaNeueCyr;
+font-size: 38px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+}
+.global-top h2{
+  margin-top: 20px;
+}
+.global-contains p{
+  color: #ADBDCC;
+  font-family: HelveticaNeueCyr;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.global-bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 50px;
+}
+.global-bottom h5{
+  font-family: HelveticaNeueCyr;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+color: white;
+border-left: 1px solid #00D4FF;
+padding-left: 10px;
+
+}
+.global-bottom p{
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+color: #ADBDCC;
+padding-left: 10px;
+
+}
+.global-top p span{
+  color: #00D4FF;
+}
+.get-started{
+  margin-top: 100px;
+}
+.started-contains{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.started-contains-left{
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  gap: 1.5rem;
+  /* border: 1px solid red; */
+  /* justify-content: space-between; */
+}
+.started-contains-right{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.started-contains-left h2{
+  color: #0A2540;
+  font-family: HelveticaNeueCyr;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+
+}
+.started-contains-left p{
+  color: #425466;
+  font-family: HelveticaNeueCyr;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.left-button{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.left-button button{
+  background: #635BFF;
+  font-family: Arial;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+color: #FFFFFF;
+width: 111.64px;
+height: 33px;
+gap: 0px;
+border-radius: 16.5px;
+outline: none;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0px;
+
+}
+.left-button a{
+  color: #635BFF;
+  text-decoration: none;
+  font-family: Arial;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+display: flex;
+align-items: center;
+}
+.started-contains-left p span{
+  color: #635BFF;
+}
+.started-contains-right{
+  flex-basis: 45%;
+}
+.started-contains-right{
+  display: flex;
+}
+.started-contains-right h3{
+  color: #0A2540;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+border-left: #635BFF 1px solid;
+padding-left: 10px;
+}
+.started-contains-right p{
+  color: #425466;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+padding-left: 10px;
+}
+.started-contains-right a{
+  padding-left: 10px;
+  text-decoration: none;
+  color: #635BFF;
+  font-family: Arial;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+display: flex;
+align-items: center;
+gap: 1rem;  
+
+}
+.images-get-started{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  margin-top: -50px;
+}
+.footer{
+  margin-top: 100px;
+}
+.footer-contains{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+.col-1-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col-1-left h4{
+  color: #0A2540;
+  font-weight: 700;
+}
+.col-1-left h6{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0A2540;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 550;
+line-height: 24px;
+text-align: left;
+
+}
+.col-1-bottom p{
+  color: #364657;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.col-1 p b{
+  color: #0A2540;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+font-weight: bolder;
+
+}
+.col-1 a{
+  color: #0A2540;
+  text-decoration: none;
+  font-family: HelveticaNeueCyr;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+
+}
+.middle{
+  width: 120px;
+}
+@media (max-width: 720px){
+  .global-contains h4 {
+    color: #00D4FF;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+.global-top h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 30px;
+}
+.global-top h2 br{
+  display: none;
+}
+.global-contains p {
+    color: #ADBDCC;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-align: justify;
+}
+.global-contains p br {
+    display: none;
+}
+.global-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem;
+    margin-top: 50px;
+}
+.global-bottom h5 {
+    font-family: HelveticaNeueCyr;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: white;
+    border-left: 1px solid #00D4FF;
+    padding-left: 10px;
+}
+.global-bottom h5 p{
+  text-align: justify;
+}
+.started-contains{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.started-contains-right{
+  display: flex;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+.images-get-started{
+  z-index: -1;
+  margin-top: 0px;
+  width: 100%;
+}
+.started-contains-right p {
+    color: #425466;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    padding-left: 10px;
+    text-align: justify;
+}
+.started-contains-right .para-1{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.footer-contains{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.middle{
+  width: auto;
+}
+}
+.started-contains-right .para-1{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+</style>
+<body>
+    <section>
+        <div class="background">
+            <div class="polygon"></div>
+            <div class="blur"></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                
+                STRIPE
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Solutions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                </ul>
+                <div class="d-flex navbar-button">
+                  <button class="btn btn-outline-success" type="button">Sign in <i class='bx bx-chevron-right'></i></button>
+                </div>
+              </div>
+              
+            </div>
+          </nav>
+          <div class="hero">
+            <div class="container">
+                <div class="hero-contains">
+                    <div class="hero-left">
+                        <h1>Financial <br> infrastructure <br> for the internet</h1>
+                        <p>Millions of companies of all sizes—from startups to <br> Fortune 500s—use Stripe’s software and APIs to accept <br> payments, send payouts, and manage their businesses <br> online.</p>
+                        <div class="buttons">
+                            <button>Start now <i class='bx bx-chevron-right'></i></button>
+                            <a href="">Contact Sales <i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <img src="assets/div (13).png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+    <div class="other">
+      <div class="images">
+        <div class="container">
+          <div class="images-contains">
+            <img src="assets/svg.png"  alt="">
+            <img src="assets/svg (1).png"  alt="">
+            <img src="assets/svg (2).png"  alt="">
+            <img src="assets/Frame.png"  alt="">
+            <img src="assets/Frame (1).png"  alt="">
+            <img src="assets/Frame (2).png"  alt="">
+            <img src="assets/Frame (3).png"  alt="">
+            <img src="assets/Frame (4).png"  alt="">
+          </div>
+        </div>
+      </div>
+      <div class="united-platform">
+        <div class="container">
+          <div class="united-contains">
+            <h4>Unified platform</h4>
+            <h2>A fully integrated suite of payments products</h2>
+            <div class="para">
+              <p>We bring together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for <span>online and in-person retailers, subscriptions businesses, software platforms and marketplaces,</span> and everything in between.</p>
+              <p>We also help companies <span>beat fraud, send invoices, issue virtual and physical cards, reduce friction at checkout, get financing, manage business spend,</span> and much more.</p>
+            </div>
+            <button>Start with payments<i class='bx bx-chevron-right'></i></button>
+        
+          </div>
+        </div>
+      </div>
+      <div class="big-image">
+        <div class="container">
+          <div class="big-contains">
+            <img src="assets/div (9).png" width="100%" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="designed">
+        <div class="container">
+          <div class="designed-contains">
+            <div class="design-left">
+              <div class="design-left-top">
+                <h2>Designed for developers</h2>
+                <h4>The world’s most powerful <br> and easy-to-use APIs</h4>
+                <p>We agonize over the right abstractions so your <br> teams don’t need to stitch together disparate <br> systems or spend months integrating payments <br> functionality.</p>
+                <button>Read the docs<i class='bx bx-chevron-right'></i></button>
+              </div>
+              <div class="design-left-bottom">
+                <div class="para-1">
+                  <h5>Tools for every stack</h5>
+                  <p>We offer client and server  libraries in everything from  React and PHP to .NET and iOS.</p>
+                  <a href="">See libraries<i class='bx bx-chevron-right'></i></a>
+                </div>
+                <div class="para-1">
+                  <h5>Prebuilt integrations</h5>
+                  <p>Use integrations for  systems like Shopify, NetSuite, WooCommerce,  and more.</p>
+                  <a href="">Explore partners<i class='bx bx-chevron-right'></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="design-right">
+              <img src="assets/figure.png" width="100%" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-stripe">
+        <div class="container">
+          <div class="why-contains">
+            <div class="why-top">
+              <h4>Why Stripe</h4>
+              <h2>A technology-first approach to payments <br> and finance</h2>
+            </div>
+            <div class="why-bottom">
+              <div class="para-1">
+                <h5>Close to the metal</h5>
+                <p>From <span>direct integrations</span> with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.</p>
+              </div>
+              <div class="para-1">
+                <h5>Fastest-improving platform</h5>
+                <p>We release <span>hundreds of features</span> and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)</p>
+              </div>
+              <div class="para-1">
+                <h5>Battle-tested reliability</h5>
+                <p>Our systems operate with <span>99.99%+</span> uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.</p>
+              </div>
+              <div class="para-1">
+                <h5>Intelligent optimizations</h5>
+                <p>Our machine learning models train on <span>billions</span> of data points and help increase revenue across conversion, fraud, revenue recovery, and more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="global">
+        <div class="container">
+          <div class="global-contains">
+            <div class="global-top">
+              <h4>Global scale</h4>
+              <h2>The backbone for <br> internet business</h2>
+              <p>For ambitious companies around the world, <br> Stripe makes moving money as simple,<br> borderless, and programmable as the rest of the <br> internet. Our teams are based in dozens of <br> offices around the world and we process <br> hundreds of billions of dollars each year for <br><span>startups to Fortune 500s.</span></p>
+            </div>
+            <div class="global-bottom">
+              <div class="para-1">
+                <h5>250M+</h5>
+                <p>API requests per day, peaking at 13,000 requests a second.</p>
+              </div>
+              <div class="para-1">
+                <h5>90%</h5>
+                <p>of U.S. adults have bought from businesses using Stripe.</p>
+              </div>
+              <div class="para-1">
+                <h5>135+</h5>
+                <p>currencies and payment methods supported.</p>
+              </div>
+              <div class="para-1">
+                <h5>35+</h5>
+                <p>countries with local acquiring, optimizing acceptance rates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="get-started">
+        <div class="container">
+          <div class="started-contains">
+            <div class="started-contains-left">
+              <h2>Ready to get started?</h2>
+              <p>Explore <span>Stripe Payments</span>, or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business.</p>
+              <div class="left-button">
+                <button>Start now<i class='bx bx-chevron-right'></i></button>
+                <a href="">Contact sales<i class='bx bx-chevron-right'></i></a>
+              </div>
+            </div>
+            <div class="started-contains-right">
+              <div class="para-1">
+                <h3>Always know what you pay</h3>
+                <p>Integrated per-transaction pricing with no hidden fees.</p>
+                <a href="">Pricing details<i class='bx bx-chevron-right'></i></a>
+              </div>
+              <div class="para-1">
+                <h3>Start your integration</h3>
+                <p>Get up and running with Stripe in as little as 10 minutes.</p>
+                <a href="">API reference<i class='bx bx-chevron-right'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="images-get-started">
+        <div class="img-left">
+          <img src="assets/2 colors/div (16).png" width="100%" alt="">
+        </div>
+        <div class="img-right">
+          <img src="assets/2 colors/div (15).png" width="100%" alt="">
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-contains">
+            <div class="col-1-left">
+              <div class="col-1-top">
+                <div class="logo">
+                  <h4>stripe</h4>
+                  <h6><i class='bx bxs-navigation' ></i>United States</h6>
+                  <h6><i class='bx bxs-message-rounded'></i>English (United States)</h6>
+                </div>
+              </div>
+              <div class="col-1-bottom">
+                <p>&#169; 2022 Stripe, Inc.</p>
+              </div>
+            </div>
+            <div class="col-1">
+              <p><b>Products</b></p>
+              <a href="">Atlas</a>
+              <a href="">Billing</a>
+              <a href="">Capital</a>
+              <a href="">Checkout</a>
+              <a href="">Climate</a>
+              <a href="">Connect</a>
+              <a href="">Corporate Card</a>
+              <a href="">Data Pipeline</a>
+              <a href="">Elements</a>
+              <a href="">Financial Connections</a>
+              <a href="">Identity</a>
+              <a href="">Invoicing</a>
+              <a href="">Issuing</a>
+              <a href="">Link</a>
+              <a href="">Payments</a>
+              <a href="">Payment Links</a>
+              <a href="">Payouts</a>
+              <a href="">Pricing</a>
+              <a href="">Radar</a>
+              <a href="">Revenue Recognition</a>
+              <a href="">Sigma</a>
+              <a href="">Tax</a>
+              <a href="">Terminal</a>
+              <a href="">Treasury</a>
+            </div>
+            <div class="col-1 middle">
+              <p><b>Use Cases</b></p>
+              <a href="">Ecommerce</a>
+              <a href="">SaaS</a>
+              <a href="">Marketplaces</a>
+              <a href="">Embedded Finance</a>
+              <a href="">Platforms</a>
+              <a href="">Creator Economy</a>
+              <a href="">Crypto</a>
+              <a href="">Global Businesses</a>
+              <a href="">Integrations & Custom Solutions</a>
+              <a href="">App Marketplace</a>
+              <a href="">Partner Ecosystem</a>
+              <a href="">Professional Services</a>
+              <a href="">Developers</a>
+              <a href="">Documentation</a>
+              <a href="">API Reference</a>
+              <a href="">API Status</a>
+              <a href="">API Changelog</a>
+              <a href="">Build a Stripe App</a>
+            </div>
+            <div class="col-1">
+              <p><b>Resources</b></p>
+              <a href="">Support Center</a>
+              <a href="">Support Plans</a>
+              <a href="">Guides</a>
+              <a href="">Customer Stories</a>
+              <a href="">Blog</a>
+              <a href="">Annual Conference</a>
+              <a href="">Privacy & Terms</a>
+              <a href="">Licenses</a>
+              <a href="">COVID-19</a>
+              <a href="">Sitemap</a>
+              <a href="">Cookie settings</a>
+              <a href="">Company</a>
+              <a href="">Jobs</a>
+              <a href="">Newsroom</a>
+              <a href="">Stripe Press</a>
+              <a href="">Become a Partner</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

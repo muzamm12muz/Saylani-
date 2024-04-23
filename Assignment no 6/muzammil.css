@@ -1,0 +1,48 @@
+.main2{
+    background-color: white;
+    width: 250px;
+    height: 2200px;
+    margin-left: 23px;
+    font-size: 13px;
+}
+#jj{
+    display: flex;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+#kk{
+    text-align: center;
+    padding-right: 5px;
+}
+#zz{
+    padding-top: 5px;
+    padding-left: 5px;   
+}
+.xx{
+    padding-right: 5px;
+    
+    
+}
+#cc{
+    margin-left: 5px;
+}
+.vv{
+    padding-top: 5px;
+    text-align: center;
+}
+#nn{
+    padding-top: 5px;
+}
+.mm{
+    padding-top: 10px;   
+}
+.endend{
+    background-color: black;
+    width: 250px;
+    height: 226px;
+    color: white;
+}
+#aaa{
+    display: flex;
+    padding-top: 5px;
+}
