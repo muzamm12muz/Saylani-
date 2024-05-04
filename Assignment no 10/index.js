@@ -7,4 +7,4 @@ var c = 15;
 var sum = a + b + c;
 
 // Print the sum
-console.log('The sum of ' , a + ', ' + b + ', and ' + c + ' is: ' + sum);
+console.log('The sum of ' , a , ', ' , b , '  and ' , c  , ' is: ' + sum);
